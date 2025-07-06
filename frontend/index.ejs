@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModWizard - Docs</title>
+    <link rel="stylesheet" href="./src/css/themes.css">
+    
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/navbar.css">
+    <link rel="stylesheet" href="./src/css/sidebar.css">
+    <link rel="stylesheet" href="./src/css/content.css">
+    <link rel="stylesheet" href="./src/css/content-components.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-java.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
+
+    <!-- Load page management system -->
+    <script type="module" src="./src/js/pages/pageManager.js"></script>
+    <script type="module" src="./src/js/pages/registry.js"></script>
+    <script src="./src/js/navigation.js" defer></script>
+    <script src="./src/js/sidebar-left.js" defer></script>
+
+    <script src="./src/js/darkmode-switch.js" defer></script>
+</head>
+<body class="theme-dark">
+    <%- include('components/navbar') %>
+    
+    <main>
+        <div class="sidebar-left">            
+            <div class="section">
+                <div class="section-title">Getting Started</div>
+                <div class="section-content">
+                    <a href="#introduction" class="nav-link" data-page="introduction">Introduction to ModWizard</a>
+                    <a href="#project-creation" class="nav-link" data-page="project-creation">Creating a Project</a>
+                    <a href="#project-download" class="nav-link" data-page="project-download">Downloading & Building a Mod</a>
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">General Blocks</div>
+                <div class="section-content">
+                    <a href="#blocks" class="nav-link" data-page="blocks">Overview</a>
+                    <a href="#condition-blocks" class="nav-link" data-page="condition-blocks">Condition Blocks</a>
+                    <a href="#math-blocks" class="nav-link" data-page="math-blocks">Math Blocks</a>
+                    <a href="#string-blocks" class="nav-link" data-page="string-blocks">String Blocks</a>
+                    <a href="#list-blocks" class="nav-link" data-page="list-blocks">List Blocks</a>
+                    <a href="#variable-blocks" class="nav-link" data-page="variable-blocks">Variable Blocks</a>
+                    <a href="#function-blocks" class="nav-link" data-page="function-blocks">Function Blocks</a>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Minecraft Blocks</div>
+                <div class="section-content">
+                    <a href="#minecraft-blocks" class="nav-link" data-page="minecraft-blocks">Overview</a>
+                    <a href="#general-minecraft-blocks" class="nav-link" data-page="general-minecraft-blocks">General</a>
+                    <a href="#minecraft-blocks-events" class="nav-link" data-page="minecraft-blocks-events">Events</a>
+                    <a href="#minecraft-blocks-player" class="nav-link" data-page="minecraft-blocks-player">Player</a>
+                    <a href="#minecraft-blocks-displayentity" class="nav-link" data-page="minecraft-blocks-displayentity">Display Entity</a>
+
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">Contributing</div>
+                <div class="section-content">
+                    <a href="#contributing" class="nav-link" data-page="contributing">How to contribute</a>
+                    <a href="#dev-guides" class="nav-link" data-page="dev-guides">Developer Guides</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content-container">
+            <div class="content">
+                <!-- Content will be dynamically loaded here -->
+                <div class="loading">Loading...</div>
+            </div>
+        </div>
+        
+        <div class="sidebar-right">
+            <h3>On this page</h3>
+            <ul id="toc">
+                <!-- TOC will be dynamically generated -->
+            </ul>
+            
+            <h3>Page Authors</h3>
+            <div id="authors">
+                <!-- Contributors will be dynamically loaded -->
+            </div>
+        </div>
+    </main>
+</body>
+</html>

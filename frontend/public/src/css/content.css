@@ -1,0 +1,22 @@
+.content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: calc(100vh - 110px);
+    overflow-y: scroll;
+}
+
+.content {
+    width: calc(100% - 780px);
+    margin-top: 20px;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+.content h1,
+.content h2,
+.content h3 {
+    margin-bottom: 8px;
+}

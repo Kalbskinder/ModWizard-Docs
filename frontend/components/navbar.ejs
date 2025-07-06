@@ -1,0 +1,31 @@
+<header>
+        <div class="navbar">
+            <div class="space-between">
+                <div class="flex-row">
+                    <div class="logo-container">
+                        <a href="/" class="name"><img src="./images/logo.png" alt="Logo" class="logo">ModWizard</a>
+                    </div>
+                    <div class="searchbar">
+                        <button>
+                            <%- include('svg/search') %>
+                            <span class="search">Search</span>
+                            <span class="shortcut">Ctrl K</span>
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <ul class="links">
+                        <li><a href="https://github.com/Kalbskinder/ModWizard"><%- include('svg/github') %></a></li>
+                        <li><a href="https://discord.gg/your-discord-link"><%- include('svg/discord') %></a></li>
+                        <label class="toggle-switch">
+                            <input type="checkbox">
+                            <span class="slider">
+                                <%- include('svg/sun') %>
+                                <%- include('svg/moon') %>
+                            </span>
+                        </label>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>

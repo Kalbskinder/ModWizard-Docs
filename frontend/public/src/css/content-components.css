@@ -1,0 +1,39 @@
+.content .info-banner {
+    background-color: var(--info-bg);
+    border-left: 4px solid var(--info-border);
+    padding: 12px 16px;
+    margin: 20px 0;
+
+}
+
+.content .info-banner-title {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.content .info-banner-content {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+.content .highlight {
+    background-color: var(--highlight-bg);
+    border: var(--highlight-border) solid 1px;
+    color: #4a9eff;
+    padding: 1.5px 4px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-top: 3px;
+    margin-bottom: 8px;
+    width: fit-content;
+}
+
+.content .link {
+    color: #4a9eff;
+    text-decoration: underline;
+}
+
+.content pre[class*="language-"] {
+    background-color: var(--pre) !important;
+}
